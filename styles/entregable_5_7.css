@@ -1,0 +1,32 @@
+*{
+    max-width: 1600px;
+}
+
+header{
+    background-color: rgb(143, 166, 218);
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    text-align: left;
+}
+nav {
+    align-self: center;
+    padding: 20px;
+}
+nav a{
+    padding: 5px;
+}
+nav a:hover{
+    color: aliceblue;
+}
+a:visited{
+    color: gold;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: rgb(143, 166, 218);
+}

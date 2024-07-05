@@ -4,9 +4,21 @@ var rls = require("readline-sync");
 var userAns = rls.question("Desea calcular la potencia de un numero(s/n)? ");
 var base;
 var exp;
+var result;
 function getPotencia() {
-    var result = Math.pow(base, exp);
-    console.log('El resultado es: ' + result);
+    var mult = 1;
+    // console.log('El resultado es: '+result);
+    if (exp > 0) {
+        for (var i = 0; i < exp; i++) {
+            mult *= base;
+            result = mult;
+        }
+        console.log('El resultado es: ' + result);
+    }
+    else {
+        result = mult;
+        console.log('El resultado es: ' + result);
+    }
 }
 while (userAns == "s") {
     base = rls.questionInt("Ingrese numero de base: ");
